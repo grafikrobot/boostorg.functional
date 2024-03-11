@@ -8,6 +8,10 @@
 
 import testing ;
 
+project : requirements
+    <source>/boost/smart_ptr//boost_smart_ptr
+    ;
+
 run value_factory.cpp ;
 run value_factory_args.cpp ;
 run value_factory_move.cpp ;

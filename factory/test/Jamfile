@@ -9,7 +9,7 @@
 import testing ;
 
 project : requirements
-    <source>/boost/smart_ptr//boost_smart_ptr
+    <library>/boost/smart_ptr//boost_smart_ptr
     ;
 
 run value_factory.cpp ;

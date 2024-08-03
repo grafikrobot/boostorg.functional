@@ -4,6 +4,8 @@
 
 import testing ;
 
+project : requirements <library>/boost/functional//boost_functional ;
+
 test-suite functional :
     [ run function_test.cpp ]
     ;

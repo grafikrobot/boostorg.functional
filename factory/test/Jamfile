@@ -9,6 +9,7 @@
 import testing ;
 
 project : requirements
+    <library>/boost/functional//boost_functional
     <library>/boost/smart_ptr//boost_smart_ptr
     ;
 

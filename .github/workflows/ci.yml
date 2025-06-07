@@ -48,7 +48,7 @@ jobs:
             packages: "g++-4.6"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:14.04"
             cxx: "g++"
             sources: ""
             llvm_os: ""
@@ -113,7 +113,7 @@ jobs:
             packages: "g++-6"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:14.04"
+            container: "ubuntu:18.04"
             cxx: "g++-6"
             sources: ""
             llvm_os: ""
@@ -126,7 +126,7 @@ jobs:
             packages: "g++-7"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:18.04"
             cxx: "g++-7"
             sources: ""
             llvm_os: ""
@@ -139,7 +139,7 @@ jobs:
             packages: "g++-8"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:18.04"
             cxx: "g++-8"
             sources: ""
             llvm_os: ""
@@ -152,7 +152,7 @@ jobs:
             packages: "g++-9"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:20.04"
             cxx: "g++-9"
             sources: ""
             llvm_os: ""
@@ -269,7 +269,7 @@ jobs:
             packages: "clang-4.0"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:14.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-4.0"
             sources: ""
             llvm_os: "trusty"
@@ -282,7 +282,7 @@ jobs:
             packages: "clang-5.0"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:14.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-5.0"
             sources: ""
             llvm_os: "trusty"
@@ -295,7 +295,7 @@ jobs:
             packages: "clang-6.0"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:14.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-6.0"
             sources: ""
             llvm_os: "trusty"
@@ -308,7 +308,7 @@ jobs:
             packages: "clang-7"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-7"
             sources: ""
             llvm_os: "xenial"
@@ -321,7 +321,7 @@ jobs:
             packages: "clang-8"
             packages_to_remove: ""
             os: "ubuntu-latest"
-            container: "ubuntu:16.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-8"
             sources: ""
             llvm_os: "xenial"
@@ -334,7 +334,7 @@ jobs:
             packages: " libc++-9-dev libc++abi-9-dev"
             packages_to_remove: "libc++-dev libc++abi-dev"
             os: "ubuntu-latest"
-            container: "ubuntu-18.04"
+            container: "ubuntu:18.04"
             cxx: "clang++-libc++"
             sources: ""
             llvm_os: "xenial"
@@ -412,7 +412,7 @@ jobs:
           git submodule update --init tools/boostdep
           mkdir -p libs/functional
           cp -r $TRAVIS_BUILD_DIR/* libs/functional
-          python tools/boostdep/depinst/depinst.py -I forward/test -I factory/test -I overloaded_function/test functional
+          python3 tools/boostdep/depinst/depinst.py -I forward/test -I factory/test -I overloaded_function/test functional
           ./bootstrap.sh
           ./b2 headers
 
@@ -498,7 +498,7 @@ jobs:
           git submodule update --init tools/boostdep
           mkdir -p libs/functional
           cp -r $TRAVIS_BUILD_DIR/* libs/functional
-          python tools/boostdep/depinst/depinst.py -I forward/test -I factory/test -I overloaded_function/test functional
+          python3 tools/boostdep/depinst/depinst.py -I forward/test -I factory/test -I overloaded_function/test functional
           ./bootstrap.sh
           ./b2 headers
 

@@ -8,7 +8,9 @@
 import testing ;
 
 # Sun does not automatically detect type-of emulation (force it).
-project : requirements <toolset>sun:<define>BOOST_TYPEOF_EMULATION ;
+project : requirements <toolset>sun:<define>BOOST_TYPEOF_EMULATION
+    <library>/boost/functional//boost_functional
+    ;
 
 run functor.cpp ;
 run make_decl.cpp ;

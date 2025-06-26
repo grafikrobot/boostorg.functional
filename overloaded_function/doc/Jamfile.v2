@@ -9,8 +9,8 @@ import quickbook ;
 using boostbook ;
 
 doxygen reference
-    :   ../../../../boost/functional/overloaded_function.hpp
-        ../../../../boost/functional/overloaded_function/config.hpp
+    :   ../../include/boost/functional/overloaded_function.hpp
+        ../../include/boost/functional/overloaded_function/config.hpp
     :   <reftitle>"Reference"
         <doxygen:param>PREDEFINED="DOXYGEN"
         <doxygen:param>QUIET=YES

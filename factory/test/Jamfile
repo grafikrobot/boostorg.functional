@@ -8,6 +8,11 @@
 
 import testing ;
 
+project : requirements
+    <library>/boost/functional//boost_functional
+    <library>/boost/smart_ptr//boost_smart_ptr
+    ;
+
 run value_factory.cpp ;
 run value_factory_args.cpp ;
 run value_factory_move.cpp ;

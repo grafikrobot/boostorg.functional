@@ -290,19 +290,6 @@ jobs:
             toolset: "clang"
             compiler: "clang++-8"
             cxxstd: "11,14,17,2a"
-          - name: "TOOLSET=clang COMPILER=clang++-libc++ CXXSTD=11,14,1z Job 24"
-            buildtype: "boost"
-            packages: " libc++-9-dev libc++abi-9-dev clang"
-            packages_to_remove: "libc++-dev libc++abi-dev"
-            os: "ubuntu-latest"
-            container: "ubuntu:18.04"
-            cxx: "clang++-libc++"
-            sources: ""
-            llvm_os: "xenial"
-            llvm_ver: "9"
-            toolset: "clang"
-            compiler: "clang++-libc++"
-            cxxstd: "11,14,1z"
 
     runs-on: ${{ matrix.os }}
     container:
